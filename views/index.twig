@@ -1,0 +1,24 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <h1>Joy of Glitching</h1>
+  <form id="form" action="/glitch" method="post" enctype="multipart/form-data">
+    <p>Upload a .jpg image here to glitch it.</p>
+    <p><input type="file" name="file" id="file"></p>
+    <p>
+      <label for="glitch-factor">What is the glitch factor?<br>Change it if it doesn't work</label>
+      <input type="number" min="1" max="10000" id="glitch-factor" name="glitch-factor" value="1">
+    </p>
+    <p>
+        <input type="submit" id="submit" value="Submit" disabled>
+    </p>
+  </form>
+
+  <img src="#" id="result-img" alt="result" style="display:none">
+
+  <div>{{ data }}</div>
+{% endblock %}
+
+{% block javascripts %}
+  <script src="javascripts/upload.js"></script>
+{% endblock %}

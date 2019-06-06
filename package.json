@@ -1,0 +1,29 @@
+{
+  "name": "joy-of-glitching",
+  "version": "1.0.0",
+  "description": "A simple app where you upload a jpg, and you get it back, but \"visually glitched\".",
+  "scripts": {
+    "start": "nodemon -e js,json,twig ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexPernot/joy-of-glitching.git"
+  },
+  "author": "Alex Pernot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexPernot/joy-of-glitching/issues"
+  },
+  "homepage": "https://github.com/AlexPernot/joy-of-glitching#readme",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.17.1",
+    "formidable": "^1.2.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "nodemon": "^1.19.1",
+    "twig": "~0.10.3"
+  }
+}
